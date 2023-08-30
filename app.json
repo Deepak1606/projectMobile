@@ -1,4 +1,8 @@
 {
   "name": "projectMobile",
-  "displayName": "projectMobile"
+  "displayName": "projectMobile",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-9211576388302475~7896878068",
+    "ios_app_id": "ca-app-pub-9211576388302475~7896878068"
+  }
 }

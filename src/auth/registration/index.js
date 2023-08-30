@@ -26,8 +26,11 @@ const RegistrationScreen = (props) => {
                 <TouchableOpacity activeOpacity={0.6} style={{width:'80%', borderRadius:10, marginVertical:10, padding:5, backgroundColor:'#dddddd'}}>
                 <Text style={{color:'#222222', padding:10, fontSize:16, fontWeight:'600', textAlign:'center'}}>Register</Text>
                 </TouchableOpacity>
-                <View style={{width:'80%'}}>
-                    <Text style={{color:'#dddddd'}}>Already a user? Login</Text>
+                <View style={{width:'80%', flexDirection:'row'}}>
+                    <Text style={{color:'#dddddd'}}>Already a user?</Text>
+                    <TouchableOpacity onPress={() => props.navigation.navigate('Login')} style={{paddingHorizontal:5}}>
+                        <Text style={{color:'#dddddd'}}>Login</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>
