@@ -5,10 +5,10 @@ const SplashIntro = (props) => {
     return(
         <View style={{flex:1, backgroundColor:'#000000'}}>
             <StatusBar barStyle={'light-content'} backgroundColor={'black'} />
-            <View style={{flex:0.5,justifyContent:'center', alignItems:'center'}}>
-                <Text style={{fontSize:64, color:'white', fontWeight:'bold'}}>Project X</Text>
+            <View style={{flex:1,justifyContent:'center', alignItems:'center'}}>
+                <Text style={{fontSize:50, color:'white', fontWeight:'bold'}}>Task ✓</Text>
             </View>
-            <View style={{flex:0.5, justifyContent:'center', alignItems:'center'}}>
+            <View style={{flex:1, justifyContent:'flex-end', alignItems:'center', marginVertical:10}}>
                 <TouchableOpacity onPress={() => props.navigation.navigate('Login')} activeOpacity={0.5} style={{padding:10, width:'80%', backgroundColor:'#eeeeee', borderRadius:5, marginVertical:10 }}>
                     <Text style={{color:'black', textAlign:'center', fontWeight:'500', fontSize:16}}>Sign In</Text>
                 </TouchableOpacity>
