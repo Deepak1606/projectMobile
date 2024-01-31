@@ -16,7 +16,11 @@ const LoginScreen = props => {
         },
         shouldUnregister: true
     });
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        Keyboard.dismiss();
+        console.log(data);
+        props.navigation.navigate('Home')
+    }
     return (
         <View style={{ flex: 1, backgroundColor: '#000000' }}>
             <StatusBar barStyle={'light-content'} backgroundColor={'black'} />

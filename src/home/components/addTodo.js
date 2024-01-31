@@ -1,13 +1,25 @@
 import React from "react";
-import { Text, View, ScrollView, TouchableOpacity } from "react-native";
+import { Text, View, ScrollView, TouchableOpacity, Dimensions, TextInput } from "react-native";
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
 const AddToDo = (props) => {
     return (
-        <TouchableOpacity onPress={() => props.navigation.goBack()} style={{backgroundColor: "transparent", justifyContent:'flex-end', flex:1}}>
-            <View style={{padding:10, backgroundColor:'#eeeeee', borderTopEndRadius:10, borderTopStartRadius:10}}>
-                <Text>Hi</Text>
+        <View style={{flex:1, backgroundColor:'white'}}>
+            <View style={{padding:10, flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
+            <Ionicons 
+            name="chevron-back-outline"
+            size={24}
+            color={"#222222"}
+            onPress={() => props.navigation.goBack()}
+            />
+            <Text style={{fontSize:18, color:'#222222', fontWeight:'600'}}>Header</Text>
+            <View />
             </View>
-        </TouchableOpacity>
+            <ScrollView 
+            showsVerticalScrollIndicator={false}
+            >
+            </ScrollView>
+        </View>
     )
 }
 

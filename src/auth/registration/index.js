@@ -25,6 +25,7 @@ const RegistrationScreen = props => {
     const onSubmit = data => {
         Keyboard.dismiss();
         console.log(data);
+        props.navigation.navigate('Home')
     };
     return (
         <View style={{ flex: 1, backgroundColor: '#000000' }}>
